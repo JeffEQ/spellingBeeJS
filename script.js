@@ -132,11 +132,11 @@ addButton.addEventListener('click', (e) => {
 wordsBankArray.push(wordDIV.innerHTML);
 console.log("wordsBankArray", wordsBankArray);
 
-let newWordDIv = document.createElement("div");
-  newWordDIv.setAttribute('id', `${wordCount}`);
-  newWordDIv.classList.add("is-size-2");
-  newWordDIv.innerHTML = wordsBankArray[wordCount];
-  wordsBankDIV.appendChild(newWordDIv);
+let newWordDiv = document.createElement("div");
+  newWordDiv.setAttribute('id', `${wordCount}`);
+  newWordDiv.classList.add("is-size-2");
+  newWordDiv.innerHTML = wordsBankArray[wordCount];
+  wordsBankDIV.appendChild(newWordDiv);
   wordCount++;
   foundTitle.innerHTML = `You have found ${wordCount} words!`;
   wordDIV.innerHTML="";
